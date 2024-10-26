@@ -31,12 +31,6 @@ services:
         start_period: 5s
       volumes:
         - db_data:/var/lib/postgresql/data
-        - type: bind
-          source: ./db/phrases.sql
-          target: /docker-entrypoint-initdb.d/phrases.sql
-        - type: bind
-          source: ./db/levels.sql
-          target: /docker-entrypoint-initdb.d/levels.sql
       environment:
         POSTGRES_DB: $POSTGRES_DATABASE
         POSTGRES_USER_FILE: "/run/secrets/db_user"
