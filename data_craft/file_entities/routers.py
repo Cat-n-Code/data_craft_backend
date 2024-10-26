@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, UploadFile, status
 
 from data_craft.auth.dependencies import HasPermission
-from data_craft.auth.permissions import Authenticated
+from data_craft.auth.permissions import Authenticated, Anonymous
 from data_craft.core.dependencies import DbSession, FileEntityServiceDep
 from data_craft.file_entities.schemas import FileEntitySchema
 
@@ -17,7 +17,7 @@ file_entities_router = APIRouter(prefix="/files", tags=["Файлы"])
     },
     response_model=str,
     summary="Получение ссылки на файл по filename",
-    dependencies=[Depends(HasPermission(Authenticated()))],
+    dependencies=[Depends(HasPermission(Anonymous()))],
 )
 async def get_by_filename(
     session: DbSession,
@@ -31,7 +31,7 @@ async def get_by_filename(
     "/",
     response_model=FileEntitySchema,
     summary="Добавление файла",
-    dependencies=[Depends(HasPermission(Authenticated()))],
+    dependencies=[Depends(HasPermission(Anonymous()))],
 )
 async def create(
     session: DbSession,
