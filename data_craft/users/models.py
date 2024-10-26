@@ -16,7 +16,7 @@ class User(Base):
     name: Mapped[str] = mapped_column(nullable=False)
     password_hash: Mapped[str] = mapped_column(nullable=False)
     role: Mapped[Role] = mapped_column(
-        server_default="CUSTOMER", default="CUSTOMER", nullable=False
+         nullable=False
     )
 
 
