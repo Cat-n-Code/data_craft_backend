@@ -7,7 +7,7 @@ services:
     ports:
       - "$SERVER_PORT:$SERVER_PORT"
     environment:
-      CORS_ALLOWED_ORIGINS: '["http://localhost:$SERVER_PORT", "http://176.109.107.222:8080"]'
+      CORS_ALLOWED_ORIGINS: '["http://localhost:$SERVER_PORT", "http://88.218.66.181:8888"]'
     secrets:
       - initial_user
       - auth_token_secret_key
