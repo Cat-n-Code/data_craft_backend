@@ -34,7 +34,7 @@ def create_app(settings: AppSettings | None = None) -> FastAPI:
         title="Сервис-конструктор отчетов",
         lifespan=_app_lifespan,
         servers=[
-            {"url": "http://localhost:8080", "description": "Локальный сервер"},
+            {"url": "http://localhost:8888", "description": "Локальный сервер"},
             # {"url": "http://176.109.107.222:8080", "description": "Dev сервер"},
         ],
         responses={
