@@ -7,21 +7,21 @@
     ```
 3. Создайте .env файл со следующими полями. Значения полей будут отличаться в вашей конфигурации:
    ```ini
-   SERVER_PORT=8080
-   AUTH_TOKEN_SECRET_KEY=I5DrSPTUuY8ytohMTC3nwnRLqsbLZHNYn9zufr49mG0=
-   INITIAL_USER=null
-   DB_URL=postgresql+psycopg://user:qwerty12@database:5432/fitness_app
+    SERVER_PORT=8080
+    AUTH_TOKEN_SECRET_KEY=I5DrSPTUuY8ytohMTC3nwnRLqsbLZHNYn9zufr49mG0=
+    INITIAL_USER=null
+    DB_URL=postgresql+psycopg://user:qwerty12@database:5432/data_craft
     
-   POSTGRES_DATABASE=fitness_app
-   POSTGRES_USER=user
-   POSTGRES_PASSWORD=qwerty12
+    POSTGRES_DATABASE=data_craft
+    POSTGRES_USER=user
+    POSTGRES_PASSWORD=qwerty12
     
-   REGION=ru-moscow
-   AWS_ACCESS_KEY_ID=XYJYWE7MHKQF6D9IO2NN
-   AWS_SECRET_ACCESS_KEY=XOWPXUbI709yudHkKKypxHUTfU9bytI1eUW2Yae4
-   BUCKET_NAME=cat-n-code-fitness-app
-   AWS_ENDPOINT=https://obs.ru-moscow-1.hc.sbercloud.ru/
-   AWS_ACCESS_DOMAIN_NAME=https://cat-n-code-fitness-app.obs.ru-moscow-1.hc.sbercloud.ru/
+    REGION=ru-central1
+    AWS_ACCESS_KEY_ID=YCAJEeNDwcaQCXm3HgKm1diik
+    AWS_SECRET_ACCESS_KEY=YCNFbMGRR_do7WuF32jdJAvHhnMb1Z9PcOctT8qT
+    BUCKET_NAME=bucketcharm
+    AWS_ENDPOINT=https://storage.yandexcloud.net/
+    AWS_ACCESS_DOMAIN_NAME=https://storage.yandexcloud.net/bucketcharm/
    ```
 4. Запустите сервис:
     ```shell
