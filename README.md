@@ -5,7 +5,7 @@
     ```shell
     git clone https://github.com/Cat-n-Code/data_craft_backend.git && cd data_craft_backend
     ```
-3. Создайте .env файл со следующими полями. Значения полей будут отличаться в вашей конфигурации:
+3. Создайте .env файл со следующими полями. Рабочий набор полей:
    ```ini
     SERVER_PORT=8080
     AUTH_TOKEN_SECRET_KEY=I5DrSPTUuY8ytohMTC3nwnRLqsbLZHNYn9zufr49mG0=
